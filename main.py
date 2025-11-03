@@ -11,7 +11,7 @@ def play_sound(path):
 
 def on_press(key):
     try:
-        i = alphabet.index(key.char)
+        i = alphabet.index(key.char.lower())
 
         # out0{INDEX} where index is digits
         name = f"out0{i:02d}"
