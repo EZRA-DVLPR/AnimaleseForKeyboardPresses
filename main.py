@@ -11,20 +11,20 @@ def play_sound(path):
 
 def on_press(key):
     try:
+        # convert all keys pressed to lowercase
         i = alphabet.index(key.char.lower())
 
-        # out0{INDEX} where index is digits
+        # name = out0{INDEX} where index is 2 digits long
         name = f"out0{i:02d}"
 
         # ./sounds/NAME/.wav
         path = f"./sounds/{name}.wav"
 
-        print(f"Playing {path}")
-        # new thread to play multiple sounds at once
+        # new thread created to play multiple sounds at once
         threading.Thread(target=play_sound, args=(path,), daemon=True).start()
 
     except (AttributeError, ValueError):
-        # ignore all non-alpha keys
+        # ignore all non-alphabet keys
         pass
 
 
