@@ -14,6 +14,7 @@ Makes the respective sound from animalese whenever the user presses the correspo
 7. Open and execute shortcut
 8. There will be a new empty terminal window that opens. Leave this running in the background while you do other tasks.
 9. Enjoy typing with animalese
+10. To exit the program, press the "ESCAPE" button or close the blank terminal window
 
 ## *NIX instructions
 
